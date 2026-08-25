@@ -184,8 +184,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2001-08-01T12:23:48Z</dcterms:created>
   <dc:creator>laurensvaneykeren</dc:creator>
   <cp:lastModifiedBy>eltjo</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-08-25T20:15:57Z</dcterms:modified>
-  <cp:revision>36.24</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-08-25T20:23:11Z</dcterms:modified>
+  <cp:revision>36.25</cp:revision>
   <cp:version>R2026a</cp:version>
 </cp:coreProperties>
 
@@ -858,7 +858,7 @@ run(&apos;id_init.m&apos;)
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:36.24&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:36.25&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -1724,7 +1724,7 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/_rels/machine.xml.rels
 __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_108.xml
 <?xml version="1.0" encoding="utf-8"?>
 <chart id="108">
-  <P Name="name">MATLAB Function3</P>
+  <P Name="name">RLS for CZ</P>
   <P Name="windowPosition">[422 539.941 189 413]</P>
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
@@ -2013,7 +2013,7 @@ end</P>
 __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_123.xml
 <?xml version="1.0" encoding="utf-8"?>
 <chart id="123">
-  <P Name="name">MATLAB Function4</P>
+  <P Name="name">RLS for CL</P>
   <P Name="windowPosition">[422 539.941 189 413]</P>
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
@@ -2301,7 +2301,7 @@ end</P>
 __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_138.xml
 <?xml version="1.0" encoding="utf-8"?>
 <chart id="138">
-  <P Name="name">MATLAB Function5</P>
+  <P Name="name">RLS for Cm</P>
   <P Name="windowPosition">[422 539.941 189 413]</P>
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
@@ -3397,7 +3397,7 @@ end</P>
 __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_63.xml
 <?xml version="1.0" encoding="utf-8"?>
 <chart id="63">
-  <P Name="name">MATLAB Function</P>
+  <P Name="name">RLS for Cn</P>
   <P Name="windowPosition">[422 539.941 189 413]</P>
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
@@ -3686,7 +3686,7 @@ end</P>
 __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_78.xml
 <?xml version="1.0" encoding="utf-8"?>
 <chart id="78">
-  <P Name="name">MATLAB Function1</P>
+  <P Name="name">RLS for CX</P>
   <P Name="windowPosition">[422 539.941 189 413]</P>
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
@@ -3975,7 +3975,7 @@ end</P>
 __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_93.xml
 <?xml version="1.0" encoding="utf-8"?>
 <chart id="93">
-  <P Name="name">MATLAB Function2</P>
+  <P Name="name">RLS for CY</P>
   <P Name="windowPosition">[422 539.941 189 413]</P>
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
@@ -4292,32 +4292,32 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/machine.xml
   </instance>
   <instance id="77">
     <P Name="machine">22</P>
-    <P Name="name">MATLAB Function</P>
+    <P Name="name">RLS for Cn</P>
     <P Name="chart">63</P>
   </instance>
   <instance id="92">
     <P Name="machine">22</P>
-    <P Name="name">MATLAB Function1</P>
+    <P Name="name">RLS for CX</P>
     <P Name="chart">78</P>
   </instance>
   <instance id="107">
     <P Name="machine">22</P>
-    <P Name="name">MATLAB Function2</P>
+    <P Name="name">RLS for CY</P>
     <P Name="chart">93</P>
   </instance>
   <instance id="122">
     <P Name="machine">22</P>
-    <P Name="name">MATLAB Function3</P>
+    <P Name="name">RLS for CZ</P>
     <P Name="chart">108</P>
   </instance>
   <instance id="137">
     <P Name="machine">22</P>
-    <P Name="name">MATLAB Function4</P>
+    <P Name="name">RLS for CL</P>
     <P Name="chart">123</P>
   </instance>
   <instance id="152">
     <P Name="machine">22</P>
-    <P Name="name">MATLAB Function5</P>
+    <P Name="name">RLS for Cm</P>
     <P Name="chart">138</P>
   </instance>
 </Stateflow>
@@ -36191,7 +36191,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <System>
   <P Name="Location">[0, -7, 1707, 1019]</P>
   <P Name="Open">on</P>
-  <P Name="ZoomFactor">60</P>
+  <P Name="ZoomFactor">30</P>
   <P Name="ReportName">simulink-default.rpt</P>
   <P Name="SIDHighWatermark">2273</P>
   <Block BlockType="Terminator" Name="2" SID="2">
@@ -36400,162 +36400,6 @@ condition</P>
     <P Name="ZOrder">38</P>
     <System Ref="system_2046"/>
   </Block>
-  <Block BlockType="SubSystem" Name="MATLAB Function" SID="2242">
-    <PortCounts in="6" out="4"/>
-    <P Name="Position">[1810, 573, 1970, 707]</P>
-    <P Name="ZOrder">69</P>
-    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_2242"/>
-    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
-    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
-    <P Name="TreatAsAtomicUnit">on</P>
-    <P Name="SFBlockType">MATLAB Function</P>
-    <P Name="ContentPreviewEnabled">on</P>
-    <PortProperties>
-      <Port Type="out" Index="1">
-        <P Name="PropagatedSignals">theta_new</P>
-      </Port>
-      <Port Type="out" Index="2">
-        <P Name="PropagatedSignals">P_new</P>
-      </Port>
-      <Port Type="out" Index="3">
-        <P Name="PropagatedSignals">yhat</P>
-      </Port>
-      <Port Type="out" Index="4">
-        <P Name="PropagatedSignals">innovation</P>
-      </Port>
-    </PortProperties>
-    <System Ref="system_2242"/>
-  </Block>
-  <Block BlockType="SubSystem" Name="MATLAB Function1" SID="2251">
-    <PortCounts in="6" out="4"/>
-    <P Name="Position">[1810, -452, 1970, -318]</P>
-    <P Name="ZOrder">76</P>
-    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_2251"/>
-    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
-    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
-    <P Name="TreatAsAtomicUnit">on</P>
-    <P Name="SFBlockType">MATLAB Function</P>
-    <P Name="ContentPreviewEnabled">on</P>
-    <PortProperties>
-      <Port Type="out" Index="1">
-        <P Name="PropagatedSignals">theta_new</P>
-      </Port>
-      <Port Type="out" Index="2">
-        <P Name="PropagatedSignals">P_new</P>
-      </Port>
-      <Port Type="out" Index="3">
-        <P Name="PropagatedSignals">yhat</P>
-      </Port>
-      <Port Type="out" Index="4">
-        <P Name="PropagatedSignals">innovation</P>
-      </Port>
-    </PortProperties>
-    <System Ref="system_2251"/>
-  </Block>
-  <Block BlockType="SubSystem" Name="MATLAB Function2" SID="2256">
-    <PortCounts in="6" out="4"/>
-    <P Name="Position">[1810, -262, 1970, -128]</P>
-    <P Name="ZOrder">81</P>
-    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_2256"/>
-    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
-    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
-    <P Name="TreatAsAtomicUnit">on</P>
-    <P Name="SFBlockType">MATLAB Function</P>
-    <P Name="ContentPreviewEnabled">on</P>
-    <PortProperties>
-      <Port Type="out" Index="1">
-        <P Name="PropagatedSignals">theta_new</P>
-      </Port>
-      <Port Type="out" Index="2">
-        <P Name="PropagatedSignals">P_new</P>
-      </Port>
-      <Port Type="out" Index="3">
-        <P Name="PropagatedSignals">yhat</P>
-      </Port>
-      <Port Type="out" Index="4">
-        <P Name="PropagatedSignals">innovation</P>
-      </Port>
-    </PortProperties>
-    <System Ref="system_2256"/>
-  </Block>
-  <Block BlockType="SubSystem" Name="MATLAB Function3" SID="2261">
-    <PortCounts in="6" out="4"/>
-    <P Name="Position">[1810, -57, 1970, 77]</P>
-    <P Name="ZOrder">86</P>
-    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_2261"/>
-    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
-    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
-    <P Name="TreatAsAtomicUnit">on</P>
-    <P Name="SFBlockType">MATLAB Function</P>
-    <P Name="ContentPreviewEnabled">on</P>
-    <PortProperties>
-      <Port Type="out" Index="1">
-        <P Name="PropagatedSignals">theta_new</P>
-      </Port>
-      <Port Type="out" Index="2">
-        <P Name="PropagatedSignals">P_new</P>
-      </Port>
-      <Port Type="out" Index="3">
-        <P Name="PropagatedSignals">yhat</P>
-      </Port>
-      <Port Type="out" Index="4">
-        <P Name="PropagatedSignals">innovation</P>
-      </Port>
-    </PortProperties>
-    <System Ref="system_2261"/>
-  </Block>
-  <Block BlockType="SubSystem" Name="MATLAB Function4" SID="2266">
-    <PortCounts in="6" out="4"/>
-    <P Name="Position">[1810, 158, 1970, 292]</P>
-    <P Name="ZOrder">91</P>
-    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_2266"/>
-    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
-    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
-    <P Name="TreatAsAtomicUnit">on</P>
-    <P Name="SFBlockType">MATLAB Function</P>
-    <P Name="ContentPreviewEnabled">on</P>
-    <PortProperties>
-      <Port Type="out" Index="1">
-        <P Name="PropagatedSignals">theta_new</P>
-      </Port>
-      <Port Type="out" Index="2">
-        <P Name="PropagatedSignals">P_new</P>
-      </Port>
-      <Port Type="out" Index="3">
-        <P Name="PropagatedSignals">yhat</P>
-      </Port>
-      <Port Type="out" Index="4">
-        <P Name="PropagatedSignals">innovation</P>
-      </Port>
-    </PortProperties>
-    <System Ref="system_2266"/>
-  </Block>
-  <Block BlockType="SubSystem" Name="MATLAB Function5" SID="2271">
-    <PortCounts in="6" out="4"/>
-    <P Name="Position">[1810, 378, 1970, 512]</P>
-    <P Name="ZOrder">96</P>
-    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_2271"/>
-    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
-    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
-    <P Name="TreatAsAtomicUnit">on</P>
-    <P Name="SFBlockType">MATLAB Function</P>
-    <P Name="ContentPreviewEnabled">on</P>
-    <PortProperties>
-      <Port Type="out" Index="1">
-        <P Name="PropagatedSignals">theta_new</P>
-      </Port>
-      <Port Type="out" Index="2">
-        <P Name="PropagatedSignals">P_new</P>
-      </Port>
-      <Port Type="out" Index="3">
-        <P Name="PropagatedSignals">yhat</P>
-      </Port>
-      <Port Type="out" Index="4">
-        <P Name="PropagatedSignals">innovation</P>
-      </Port>
-    </PortProperties>
-    <System Ref="system_2271"/>
-  </Block>
   <Block BlockType="Mux" Name="Mux" SID="1954">
     <PortCounts in="2" out="1"/>
     <P Name="Position">[390, 336, 395, 374]</P>
@@ -36605,6 +36449,162 @@ condition</P>
       </Port>
     </PortProperties>
     <System Ref="system_1955"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="RLS for CL" SID="2266">
+    <PortCounts in="6" out="4"/>
+    <P Name="Position">[1810, 158, 1970, 292]</P>
+    <P Name="ZOrder">91</P>
+    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_2266"/>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">theta_new</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">P_new</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="PropagatedSignals">yhat</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="PropagatedSignals">innovation</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_2266"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="RLS for CX" SID="2251">
+    <PortCounts in="6" out="4"/>
+    <P Name="Position">[1810, -452, 1970, -318]</P>
+    <P Name="ZOrder">76</P>
+    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_2251"/>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">theta_new</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">P_new</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="PropagatedSignals">yhat</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="PropagatedSignals">innovation</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_2251"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="RLS for CY" SID="2256">
+    <PortCounts in="6" out="4"/>
+    <P Name="Position">[1810, -262, 1970, -128]</P>
+    <P Name="ZOrder">81</P>
+    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_2256"/>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">theta_new</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">P_new</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="PropagatedSignals">yhat</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="PropagatedSignals">innovation</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_2256"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="RLS for CZ" SID="2261">
+    <PortCounts in="6" out="4"/>
+    <P Name="Position">[1810, -57, 1970, 77]</P>
+    <P Name="ZOrder">86</P>
+    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_2261"/>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">theta_new</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">P_new</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="PropagatedSignals">yhat</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="PropagatedSignals">innovation</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_2261"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="RLS for Cm" SID="2271">
+    <PortCounts in="6" out="4"/>
+    <P Name="Position">[1810, 378, 1970, 512]</P>
+    <P Name="ZOrder">96</P>
+    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_2271"/>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">theta_new</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">P_new</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="PropagatedSignals">yhat</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="PropagatedSignals">innovation</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_2271"/>
+  </Block>
+  <Block BlockType="SubSystem" Name="RLS for Cn" SID="2242">
+    <PortCounts in="6" out="4"/>
+    <P Name="Position">[1810, 573, 1970, 707]</P>
+    <P Name="ZOrder">69</P>
+    <P Name="LibrarySourceProduct" Ref="bdmxdata:LibrarySourceProduct_2242"/>
+    <P Name="ErrorFcn">Stateflow.Translate.translate</P>
+    <P Name="PermitHierarchicalResolution">ExplicitOnly</P>
+    <P Name="TreatAsAtomicUnit">on</P>
+    <P Name="SFBlockType">MATLAB Function</P>
+    <P Name="ContentPreviewEnabled">on</P>
+    <PortProperties>
+      <Port Type="out" Index="1">
+        <P Name="PropagatedSignals">theta_new</P>
+      </Port>
+      <Port Type="out" Index="2">
+        <P Name="PropagatedSignals">P_new</P>
+      </Port>
+      <Port Type="out" Index="3">
+        <P Name="PropagatedSignals">yhat</P>
+      </Port>
+      <Port Type="out" Index="4">
+        <P Name="PropagatedSignals">innovation</P>
+      </Port>
+    </PortProperties>
+    <System Ref="system_2242"/>
   </Block>
   <Block BlockType="SubSystem" Name="Regressors Symmetr. and Asymmetr. F/M Coefficients" SID="2241">
     <PortCounts in="9" out="3"/>
@@ -37341,7 +37341,7 @@ condition</P>
   <Line>
     <P Name="ZOrder">201</P>
     <P Name="Src">2243#out:1</P>
-    <P Name="Points">[50, 0; 0, 153; -350, 0; 0, -113]</P>
+    <P Name="Points">[44, 0; 0, 153; -344, 0; 0, -113]</P>
     <P Name="Dst">2242#in:3</P>
   </Line>
   <Line>
@@ -37764,10 +37764,10 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
           <P Name="LoadSaveID" Class="char">0</P>
-          <P Name="Extents" Class="double">[1673.0, 760.0]</P>
-          <P Name="ZoomFactor" Class="double">0.6</P>
-          <P Name="Offset" Class="double">[-11.2483618068527, -249.95383370972388]</P>
-          <P Name="SceneRectInView" Class="double">[-11.2483618068527, -249.95383370972388, 2788.3333333333335, 1266.6666666666667]</P>
+          <P Name="Extents" Class="double">[1673.0, 526.0]</P>
+          <P Name="ZoomFactor" Class="double">0.30000000000000004</P>
+          <P Name="Offset" Class="double">[-2517.0536736688014, -558.27184243956128]</P>
+          <P Name="SceneRectInView" Class="double">[-2517.0536736688014, -558.27184243956128, 5576.6666666666661, 1753.333333333333]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
@@ -38097,7 +38097,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
       </Array>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAADNfwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAeQAAAzUAAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjQD///8AAAABAAABrwAAAzX8AgAAAAL7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////+/////8AAAAAeQAAAzUAAAAcAP///wAAAAMAAAarAAAA5vwBAAAAAvwAAAAAAAAHgAAAAAAA////+v////8BAAAAAPwAAAAAAAAGqwAAAAAA////+v////8BAAAAAvv/////AAAAAAD/////AAACeQD////7/////wAAAAAA/////wAAAQIA////AAAGqwAAAzUAAAABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAQAAADYAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEwAZQBmAHQCAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAOABjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAUgBpAGcAaAB0AgAAAAD/////AAAAAAAAAAAAAAADAAAAAQAAADoAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEIAbwB0AHQAbwBtAQAAAAD/////AAAAAAAAAAA=</P>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAADNfwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAeQAAAzUAAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjQD///8AAAABAAABrwAAAzX8AgAAAAL7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////+/////8AAAAAeQAAAzUAAAAcAP///wAAAAMAAAarAAAA5vwBAAAAAvwAAAAAAAAHgAAAAAAA////+v////8BAAAAAPwAAAAAAAAGqwAAAnkA////+gAAAAABAAAAAvv/////AQAAAAD/////AAACeQD////7/////wAAAAAA/////wAAAQIA////AAAGqwAAAksAAAABAAAAAgAAAAEAAAAC/AAAAAMAAAAAAAAAAQAAADYAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEwAZQBmAHQCAAAAAP////8AAAAAAAAAAAAAAAEAAAABAAAAOABjAG8AbABsAGEAcABzAGkAYgBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIAUgBpAGcAaAB0AgAAAAD/////AAAAAAAAAAAAAAADAAAAAQAAADoAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAEIAbwB0AHQAbwBtAQAAAAD/////AAAAAAAAAAA=</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">d22bf708-756b-41d6-af84-84beeafc600f</P>
     </Object>
