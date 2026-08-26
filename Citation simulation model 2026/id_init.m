@@ -24,3 +24,12 @@ PN0     = 10000*eye(6);
 
 % Step 3: ordinary RLS
 lambda_ID = 1.0;
+
+%% Step 4 - variance detector thresholds
+
+TX = 2.2784e-06;
+TY = 8.0633e-07;
+TZ = 2.8004e-05;
+TL = 7.0875e-06;
+TM = 3.2564e-06;
+TN = 5.4692e-07;
