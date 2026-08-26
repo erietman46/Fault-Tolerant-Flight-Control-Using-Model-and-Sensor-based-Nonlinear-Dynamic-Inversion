@@ -39041,7 +39041,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <System>
   <P Name="Location">[0, -7, 1707, 1019]</P>
   <P Name="Open">on</P>
-  <P Name="ZoomFactor">80</P>
+  <P Name="ZoomFactor">60</P>
   <P Name="ReportName">simulink-default.rpt</P>
   <P Name="SIDHighWatermark">2330</P>
   <Block BlockType="Terminator" Name="2" SID="2">
@@ -41410,9 +41410,9 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
           <P Name="LoadSaveID" Class="char">0</P>
           <P Name="Extents" Class="double">[1673.0, 792.0]</P>
-          <P Name="ZoomFactor" Class="double">0.79999999999999993</P>
-          <P Name="Offset" Class="double">[34.471339481795894, -166.41216350932439]</P>
-          <P Name="SceneRectInView" Class="double">[34.471339481795894, -166.41216350932439, 2091.25, 990.0]</P>
+          <P Name="ZoomFactor" Class="double">0.60000000000000009</P>
+          <P Name="Offset" Class="double">[973.00221376775619, -363.03646182100681]</P>
+          <P Name="SceneRectInView" Class="double">[973.00221376775619, -363.03646182100681, 2788.333333333333, 1319.9999999999998]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
