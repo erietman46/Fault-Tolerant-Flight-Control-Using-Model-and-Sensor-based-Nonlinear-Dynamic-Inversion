@@ -33,3 +33,36 @@ TZ = 2.8004e-05;
 TL = 7.0875e-06;
 TM = 3.2564e-06;
 TN = 5.4692e-07;
+
+%% =========================================================
+% STEP 5 - ANDI controller
+% ==========================================================
+
+% Inner angular-rate PI gains
+Kp_p = 4;
+Ki_p = 4;
+
+Kp_q = 4;
+Ki_q = 4;
+
+Kp_r = 4;
+Ki_r = 4;
+
+% Outer beta controller
+K_beta = 2;
+
+% Command-filter time constant
+tau_cmd = 0.5;
+
+% Maximum commanded rates
+p_ref_max = 20*pi/180;      % rad/s
+q_ref_max = 10*pi/180;      % rad/s
+r_ref_max = 10*pi/180;      % rad/s
+
+% Maximum commanded sideslip
+beta_ref_max = 5*pi/180;    % rad
+
+% Mapping from existing pilot surface commands to rate commands
+K_da_to_p    = p_ref_max/0.65;
+K_de_to_q    = q_ref_max/0.35;
+K_dr_to_beta = beta_ref_max/0.38;
