@@ -199,8 +199,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2001-08-01T12:23:48Z</dcterms:created>
   <dc:creator>laurensvaneykeren</dc:creator>
   <cp:lastModifiedBy>eltjo</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-08-26T21:24:56Z</dcterms:modified>
-  <cp:revision>36.44</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-08-27T09:16:10Z</dcterms:modified>
+  <cp:revision>36.46</cp:revision>
   <cp:version>R2026a</cp:version>
 </cp:coreProperties>
 
@@ -971,7 +971,7 @@ run(&apos;id_init.m&apos;)
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:36.44&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:36.46&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -2978,6 +2978,8 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_162.xml
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
   <P Name="viewObj">162</P>
+  <P Name="visible">1</P>
+  <subviewS/>
   <P Name="ssIdHighWaterMark">11</P>
   <P Name="decomposition">CLUSTER_CHART</P>
   <P Name="type">EML_CHART</P>
@@ -39144,7 +39146,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <System>
   <P Name="Location">[0, -7, 1707, 1019]</P>
   <P Name="Open">on</P>
-  <P Name="ZoomFactor">40</P>
+  <P Name="ZoomFactor">30</P>
   <P Name="ReportName">simulink-default.rpt</P>
   <P Name="SIDHighWatermark">2350</P>
   <Block BlockType="Terminator" Name="2" SID="2">
@@ -40213,26 +40215,32 @@ Positive</P>
   <Block BlockType="Constant" Name="Sigma0_CX" SID="2289">
     <P Name="Position">[1350, -655, 1380, -625]</P>
     <P Name="ZOrder">107</P>
+    <P Name="Value">0.5</P>
   </Block>
   <Block BlockType="Constant" Name="Sigma0_CY" SID="2292">
     <P Name="Position">[1325, -505, 1355, -475]</P>
     <P Name="ZOrder">110</P>
+    <P Name="Value">0.5</P>
   </Block>
   <Block BlockType="Constant" Name="Sigma0_CZ" SID="2295">
     <P Name="Position">[1215, -325, 1245, -295]</P>
     <P Name="ZOrder">113</P>
+    <P Name="Value">0.5</P>
   </Block>
   <Block BlockType="Constant" Name="Sigma0_Cl" SID="2299">
     <P Name="Position">[1010, -155, 1040, -125]</P>
     <P Name="ZOrder">117</P>
+    <P Name="Value">0.5</P>
   </Block>
   <Block BlockType="Constant" Name="Sigma0_Cm" SID="2304">
     <P Name="Position">[2310, 470, 2340, 500]</P>
     <P Name="ZOrder">122</P>
+    <P Name="Value">0.5</P>
   </Block>
   <Block BlockType="Constant" Name="Sigma0_Cn" SID="2307">
     <P Name="Position">[2320, 620, 2350, 650]</P>
     <P Name="ZOrder">125</P>
+    <P Name="Value">0.5</P>
   </Block>
   <Block BlockType="Reference" Name="Simulation Pace" SID="2185">
     <PortCounts/>
@@ -40368,7 +40376,7 @@ Positive</P>
     <P Name="Value">0.95</P>
   </Block>
   <Block BlockType="Constant" Name="lambda_min_Cn" SID="2308">
-    <P Name="Position">[2320, 660, 2350, 690]</P>
+    <P Name="Position">[2320, 675, 2350, 705]</P>
     <P Name="ZOrder">126</P>
     <P Name="Value">0.95</P>
   </Block>
@@ -41179,7 +41187,7 @@ condition</P>
     <P Name="Points">[0, 59]</P>
     <Branch>
       <P Name="ZOrder">504</P>
-      <P Name="Points">[0, 222; 1510, 0; 0, 54]</P>
+      <P Name="Points">[0, 222; 1510, 0; 0, 59]</P>
       <P Name="Dst">2322#in:4</P>
     </Branch>
     <Branch>
@@ -41441,7 +41449,7 @@ condition</P>
     <P Name="Points">[19, 0; 0, -102]</P>
     <Branch>
       <P Name="ZOrder">507</P>
-      <P Name="Points">[0, -138]</P>
+      <P Name="Points">[0, -128]</P>
       <P Name="Dst">2322#in:5</P>
     </Branch>
     <Branch>
@@ -41459,7 +41467,7 @@ condition</P>
   <Line>
     <P Name="ZOrder">451</P>
     <P Name="Src">2308#out:1</P>
-    <P Name="Points">[20, 0; 0, -35]</P>
+    <P Name="Points">[20, 0; 0, -50]</P>
     <P Name="Dst">2306#in:6</P>
   </Line>
   <Line>
@@ -41469,7 +41477,7 @@ condition</P>
     <P Name="Points">[19, 0; 0, 46]</P>
     <Branch>
       <P Name="ZOrder">510</P>
-      <P Name="Points">[151, 0; 0, -402; 140, 15]</P>
+      <P Name="Points">[151, 0; 0, -391]</P>
       <P Name="Dst">2322#in:6</P>
     </Branch>
     <Branch>
@@ -41879,9 +41887,9 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
           <P Name="LoadSaveID" Class="char">0</P>
           <P Name="Extents" Class="double">[1673.0, 792.0]</P>
-          <P Name="ZoomFactor" Class="double">0.4</P>
-          <P Name="Offset" Class="double">[-657.30276255081037, -708.09038022988443]</P>
-          <P Name="SceneRectInView" Class="double">[-657.30276255081037, -708.09038022988443, 4182.4999999999991, 1979.9999999999998]</P>
+          <P Name="ZoomFactor" Class="double">0.3</P>
+          <P Name="Offset" Class="double">[-2024.9392577808139, -803.19139892271357]</P>
+          <P Name="SceneRectInView" Class="double">[-2024.9392577808139, -803.19139892271357, 5576.666666666667, 2640.0000000000005]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
@@ -41947,7 +41955,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
-          <P Name="LoadSaveID" Class="char">2222</P>
+          <P Name="LoadSaveID" Class="char">2288</P>
           <P Name="Extents" Class="double">[1673.0, 792.0]</P>
           <P Name="ZoomFactor" Class="double">1.0</P>
           <P Name="Offset" Class="double">[0.0, 0.0]</P>
@@ -41957,7 +41965,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">StudioAdapterBlock</P>
-          <P Name="LoadSaveID" Class="char">2288</P>
+          <P Name="LoadSaveID" Class="char">2222</P>
           <P Name="Extents" Class="double">[1673.0, 792.0]</P>
           <P Name="ZoomFactor" Class="double">1.0</P>
           <P Name="Offset" Class="double">[0.0, 0.0]</P>
