@@ -38,6 +38,7 @@ TN = 5.4692e-07;
 % STEP 5 - ANDI controller
 % ==========================================================
 
+% Inner angular-rate PI gains
 %% Inner angular-rate PI gains
 
 % Roll
@@ -56,6 +57,11 @@ Ki_r = 5.0;
 K_beta = 2;
 
 % Command filter
+tau_cmd = 0.5;
+% Outer beta controller
+K_beta = 2;
+
+% Command-filter time constant
 tau_cmd = 0.5;
 
 % Maximum commanded rates
