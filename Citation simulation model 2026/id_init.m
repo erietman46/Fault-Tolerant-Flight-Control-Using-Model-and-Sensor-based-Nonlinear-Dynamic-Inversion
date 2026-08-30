@@ -7,7 +7,12 @@ thetaZ0 = zeros(4,1);
 PZ0     = 10000*eye(4);
 
 % Pitch moment
-thetaM0 = zeros(4,1);
+thetaM0 = [ ...
+     1.2280209971618383e-02;
+    -6.2047285966942156e-01;
+    -4.5666794901955016e-01;
+    -7.9818167910463400e-01
+];
 PM0     = 10000*eye(4);
 
 % Lateral force
@@ -15,11 +20,26 @@ thetaY0 = zeros(6,1);
 PY0     = 10000*eye(6);
 
 % Roll moment
-thetaL0 = zeros(6,1);
+thetaL0 = [ ...
+     7.0957952465296537e-06;
+    -1.0155121539575106e-01;
+    -4.2383534835366377e-01;
+     9.5796939139152812e-02;
+    -1.6885935304491506e-01;
+     3.7231485124728590e-02
+];
+
 PL0     = 10000*eye(6);
 
 % Yaw moment
-thetaN0 = zeros(6,1);
+thetaN0 = [ ...
+    -4.9609095125384690e-06;
+     1.3394476410940456e-01;
+    -6.6154460038184107e-02;
+    -1.5090063958076161e-01;
+    -1.3179507592353657e-02;
+    -9.0019184186074228e-02
+];
 PN0     = 10000*eye(6);
 
 % Step 3: ordinary RLS
@@ -80,3 +100,19 @@ Taw_r = 0.5;        % s
 Kaw_p = 1/Taw_p;    % 2 1/s
 Kaw_q = 1/Taw_q;
 Kaw_r = 1/Taw_r;
+
+%% =========================================================
+% STEP 6 - Classical rate controller
+% ==========================================================
+
+% Roll rate -> aileron
+Kp_p_classical = -1;
+Ki_p_classical = -0.5;
+
+% Pitch rate -> elevator
+Kp_q_classical = -2;
+Ki_q_classical = -0.1;
+
+% Yaw rate -> rudder
+Kp_r_classical = -2;
+Ki_r_classical = -0.1;
