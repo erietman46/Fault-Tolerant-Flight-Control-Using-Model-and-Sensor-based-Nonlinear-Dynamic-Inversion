@@ -31,6 +31,7 @@ This allows the nominal controller performance and the fault-tolerant behaviour 
 
 ---
 
+
 ## Control Architecture
 
 The Simulink model represents the complete closed-loop flight-control system:
@@ -53,3 +54,38 @@ Nonlinear Aircraft Model
 Measured / Estimated States
         |
         +-----------------------> Feedback
+```
+
+## Key Results
+
+The aileron hard-over failure is introduced at approximately `t = 60 s`.  
+The failure reduces the available aileron control effectiveness by about 50% in roll, which strongly degrades the response of the classical controller. The ANDI controller is able to accommodate the change in control effectiveness and keeps the aircraft much closer to the nominal trajectory.
+
+### Tracking Performance After Failure
+
+| Metric | Classical PI | ANDI | Improvement with ANDI |
+|---|---:|---:|---:|
+| RMS roll-rate error, `p` | 3.77 deg/s | 1.75 deg/s | 53.6% lower |
+| RMS pitch-rate error, `q` | 0.62 deg/s | 0.10 deg/s | 84.4% lower |
+| RMS yaw-rate error, `r` | 0.33 deg/s | 0.17 deg/s | 48.5% lower |
+| RMS sideslip error, `β` | 0.81 deg | 0.18 deg | 77.9% lower |
+
+The largest improvement is seen in pitch-rate and sideslip tracking. Although ANDI still experiences a transient when the failure occurs, the post-failure tracking errors remain substantially smaller than with the classical controller.
+
+### Aircraft Response and Trajectory
+
+| Metric after failure | Classical PI | ANDI |
+|---|---:|---:|
+| Maximum roll angle | 70.85 deg | 14.43 deg |
+| Maximum pitch angle | 42.42 deg | 2.61 deg |
+| Altitude loss from failure point | 7385 m | 321 m |
+| Maximum horizontal trajectory deviation | 8576 m | 327 m |
+| Maximum 3D trajectory deviation | 11290 m | 329 m |
+
+The difference is also clear in the aircraft trajectory. Under classical control, the actuator failure produces a large departure from the corresponding healthy trajectory, with a maximum horizontal deviation of approximately 8.6 km. With ANDI, this deviation is reduced to approximately 0.33 km, corresponding to a reduction of about 96%.
+
+The maximum 3D trajectory deviation is reduced from approximately 11.3 km with the classical controller to 0.33 km with ANDI. The ANDI controller also limits the maximum roll and pitch excursions and prevents the large altitude loss observed with the classical controller.
+
+Overall, the validation results show that the ANDI-based controller provides substantially better fault accommodation following the aileron hard-over failure. The controller cannot remove the transient caused by the sudden actuator failure, but it is able to recover the aircraft response and maintain considerably better tracking and trajectory control than the classical PI controller.
+
+
