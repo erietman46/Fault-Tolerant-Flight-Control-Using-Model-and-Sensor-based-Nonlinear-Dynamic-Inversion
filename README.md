@@ -1,5 +1,7 @@
 # Fault-Tolerant Flight Control for the Cessna Citation 500
 
+Project Contributors: Eltjo Rietman (Github: erietman46) and Tycho Rietman (Github: TychoRietman)
+
 Fault-tolerant flight control system for a nonlinear Cessna Citation 500 / Citation I simulation, developed in MATLAB/Simulink. The project investigates whether an Adaptive Nonlinear Dynamic Inversion (ANDI) controller can maintain satisfactory aircraft behaviour following a lateral-control actuator fault and compares its response with a conventional PI rate controller.
 
 ![3-D validation trajectories](results%20and%20validation/Fig03b_trajectory_3D.png)
