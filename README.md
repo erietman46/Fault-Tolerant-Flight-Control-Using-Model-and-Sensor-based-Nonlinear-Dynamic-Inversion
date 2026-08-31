@@ -159,7 +159,7 @@ The project intentionally combines an inherited aircraft simulation with new con
 | `plot_controller_comparison.m` | Reproducible four-case validation and figures/tables | Project implementation |
 
 
-## Source model and academic attribution
+## Source model
 
 The nonlinear aircraft environment in this repository is not an aircraft model created from scratch for this project. It builds on the long-standing TU Delft Citation/DASMAT simulation infrastructure.
 
@@ -168,14 +168,3 @@ The principal background reference for the simulation framework is:
 > C. A. A. M. van der Linden, *DASMAT — Delft University Aircraft Simulation Model and Analysis Tool: A MATLAB/Simulink Environment for Flight Dynamics and Control Analysis*, Delft University of Technology, Faculty of Aerospace Engineering, 1998.  
 > https://resolver.tudelft.nl/uuid:25767235-c751-437e-8f57-0433be609cc1
 
-### What is new in this repository
-
-The research contribution of this repository is the **fault-tolerant control/identification study built around the supplied Citation model**, in particular the integration and validation of:
-
-- the actuator-failure test configuration;
-- online force/moment coefficient reconstruction;
-- online RLS aerodynamic/control-effectiveness identification;
-- adaptive forgetting and monitoring/reset logic;
-- the ANDI rate/sideslip controller;
-- the classical PI comparison controller;
-- the four-case validation workflow and result analysis.
