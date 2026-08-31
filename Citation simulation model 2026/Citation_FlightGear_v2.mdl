@@ -204,8 +204,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2001-08-01T12:23:48Z</dcterms:created>
   <dc:creator>laurensvaneykeren</dc:creator>
   <cp:lastModifiedBy>eltjo</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-08-30T20:35:40Z</dcterms:modified>
-  <cp:revision>36.81</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2026-08-31T08:23:26Z</dcterms:modified>
+  <cp:revision>36.82</cp:revision>
   <cp:version>R2026a</cp:version>
 </cp:coreProperties>
 
@@ -1275,7 +1275,7 @@ run(&apos;id_init.m&apos;)
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:36.81&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:36.82&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="LibraryLinkDisplay">none</P>
@@ -20706,7 +20706,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_20.xml
 <System>
   <P Name="Location">[0, -7, 1707, 1019]</P>
   <P Name="Open">on</P>
-  <P Name="ZoomFactor">125</P>
+  <P Name="ZoomFactor">80</P>
   <Block BlockType="Inport" Name="In" SID="21">
     <P Name="Position">[40, 233, 70, 247]</P>
     <P Name="ZOrder">-1</P>
@@ -28730,7 +28730,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2519.xml
 <System>
   <P Name="Location">[0, -7, 1707, 1019]</P>
   <P Name="Open">on</P>
-  <P Name="ZoomFactor">80</P>
+  <P Name="ZoomFactor">125</P>
   <Block BlockType="Inport" Name="refs" SID="2520">
     <P Name="Position">[80, 48, 110, 62]</P>
     <P Name="ZOrder">-1</P>
@@ -42503,9 +42503,9 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <System>
   <P Name="Location">[0, -7, 1707, 1019]</P>
   <P Name="Open">on</P>
-  <P Name="ZoomFactor">60</P>
+  <P Name="ZoomFactor">30</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">2576</P>
+  <P Name="SIDHighWatermark">2577</P>
   <Block BlockType="Terminator" Name="2" SID="2">
     <P Name="Position">[585, 245, 605, 265]</P>
     <P Name="ZOrder">-2</P>
@@ -42540,7 +42540,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
     <System Ref="system_2351"/>
   </Block>
   <Block BlockType="Step" Name="ANDI enable" SID="2412">
-    <P Name="Position">[-225, -420, -195, -390]</P>
+    <P Name="Position">[-230, -725, -200, -695]</P>
     <P Name="ZOrder">24476</P>
     <P Name="Time">0</P>
     <P Name="InitialValue">1</P>
@@ -43260,7 +43260,7 @@ Positive</P>
   </Block>
   <Block BlockType="Logic" Name="Logical&#xA;Operator2" SID="2575">
     <PortCounts in="2" out="1"/>
-    <P Name="Position">[-115, -413, -85, -382]</P>
+    <P Name="Position">[-145, -718, -115, -687]</P>
     <P Name="ZOrder">24524</P>
     <P Name="AllPortsSameDT">off</P>
     <P Name="OutDataTypeStr">boolean</P>
@@ -43555,21 +43555,6 @@ Positive</P>
     <P Name="NumInputPorts">1</P>
     <P Name="ShowLegend">on</P>
     <P Name="DataLoggingVariableName">ScopeData4</P>
-  </Block>
-  <Block BlockType="Scope" Name="Scope1" SID="2573">
-    <PortCounts in="1"/>
-    <P Name="Position">[70, -536, 100, -504]</P>
-    <P Name="ZOrder">24523</P>
-    <P Name="GraphicalSettings">{&quot;Style&quot;:{&quot;BackgroundColor&quot;:[0.12941176470588237,0.12941176470588237,0.12941176470588237],&quot;AxesColor&quot;:[0.07058823529411765,0.07058823529411765,0.07058823529411765],&quot;LabelsColor&quot;:[0.8509803921568627,0.8509803921568627,0.8509803921568627],&quot;PreserveColors&quot;:false,&quot;Visible&quot;:[true],&quot;LineStyle&quot;:[&quot;-&quot;],&quot;LineWidth&quot;:[1.5],&quot;BarWidth&quot;:[0.9],&quot;LineColor&quot;:[&quot;auto&quot;],&quot;LineFaceAlpha&quot;:[1],&quot;LineEdgeAlpha&quot;:[1],&quot;Marker&quot;:[&quot;none&quot;],&quot;FontSize&quot;:8.5,&quot;LineTrueColor&quot;:[[1,0.9098039215686274,0.39215686274509803]],&quot;ChannelNames&quot;:&quot;&quot;,&quot;DefaultLegendLabel&quot;:[&quot;ANDI enable&quot;],&quot;PlotType&quot;:&quot;Auto&quot;,&quot;NumLinesForDisplays&quot;:[1],&quot;OffsetView&quot;:true,&quot;LineLabels&quot;:[&quot;ANDI enable&quot;],&quot;MinimizeControls&quot;:false,&quot;LineCache&quot;:null},&quot;MeasurementChannel&quot;:0,&quot;AxesScalingProperties&quot;:{&quot;AxesScaling&quot;:&quot;Manual&quot;,&quot;ExpandOnly&quot;:true,&quot;AxesScalingNumUpdates&quot;:10,&quot;ScaleAxesLimitsAtStop&quot;:true,&quot;YAxisDataRange&quot;:80,&quot;AlignYAxis&quot;:&quot;Center&quot;,&quot;AutoScaleXAxisLimits&quot;:false,&quot;XAxisDataRange&quot;:100,&quot;AlignXAxis&quot;:&quot;Center&quot;},&quot;DisplayProperties&quot;:{&quot;DisplayLayoutDimensions&quot;:[1,1],&quot;DisplayPropertyDefaults&quot;:{&quot;MaxYLimMag&quot;:10,&quot;MaxYLimReal&quot;:10,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-10,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;},&quot;DisplayContentCache&quot;:{&quot;Title&quot;:&quot;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0},&quot;SerializedDisplays&quot;:[{&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;LinePropertiesCache&quot;:{},&quot;UserDefinedChannelNames&quot;:{},&quot;PlotMagPhase&quot;:0,&quot;MaxYLimMag&quot;:10,&quot;MaxYLimReal&quot;:10,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-10,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;YLabel&quot;:&quot;&quot;,&quot;NumLines&quot;:1,&quot;ShowContent&quot;:1,&quot;Placement&quot;:0}],&quot;ColorOrder&quot;:[&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;,&quot;auto&quot;]}}</P>
-    <P Name="WindowPosition">[573.000000,323.000000,560.000000,420.000000,]</P>
-    <P Name="ScopeFrameLocation">window</P>
-    <P Name="WasSavedAsWebScope">on</P>
-    <P Name="Floating">off</P>
-    <P Name="MultipleDisplayCache">[{&quot;MaxYLimMag&quot;:1,&quot;MaxYLimReal&quot;:1,&quot;MinYLimMag&quot;:0,&quot;MinYLimReal&quot;:-1,&quot;PlotAsMagnitudePhase&quot;:false,&quot;ShowGrid&quot;:true,&quot;ShowLegend&quot;:false,&quot;Title&quot;:&quot;%&lt;SignalLabel&gt;&quot;,&quot;YLabel&quot;:&quot;&quot;}]</P>
-    <P Name="NumInputPorts">1</P>
-    <P Name="ActiveDisplayYMinimum">-1</P>
-    <P Name="ActiveDisplayYMaximum">1</P>
-    <P Name="DataLoggingVariableName">ScopeData6</P>
   </Block>
   <Block BlockType="Selector" Name="Selector" SID="2216">
     <PortCounts in="1" out="1"/>
@@ -46022,7 +46007,7 @@ condition</P>
       <Branch>
         <P Name="ZOrder">2078</P>
         <P Name="Labels">[4, 0]</P>
-        <P Name="Points">[-598, 0; 0, -130; -360, 0; 0, -56]</P>
+        <P Name="Points">[-6, 0; 0, -263; -983, 0; 0, -228]</P>
         <P Name="Dst">2575#in:2</P>
       </Branch>
       <Branch>
@@ -46060,23 +46045,10 @@ condition</P>
   <Line>
     <P Name="ZOrder">1857</P>
     <P Name="Src">2575#out:1</P>
-    <P Name="Points">[80, 0]</P>
+    <P Name="Points">[110, 0; 0, 300]</P>
     <Branch>
-      <P Name="ZOrder">1868</P>
-      <P Name="Points">[0, -5]</P>
-      <Branch>
-        <P Name="ZOrder">1869</P>
-        <P Name="Points">[0, -120]</P>
-        <P Name="Dst">2573#in:1</P>
-      </Branch>
-      <Branch>
-        <P Name="ZOrder">1867</P>
-        <P Name="Dst">2413#in:1</P>
-      </Branch>
-    </Branch>
-    <Branch>
-      <P Name="ZOrder">1861</P>
-      <P Name="Points">[0, 38; -224, 0]</P>
+      <P Name="ZOrder">2079</P>
+      <P Name="Points">[0, 43; -224, 0]</P>
       <Branch>
         <P Name="ZOrder">1866</P>
         <P Name="Points">[0, 57]</P>
@@ -46088,7 +46060,43 @@ condition</P>
         <P Name="Dst">2414#in:3</P>
       </Branch>
     </Branch>
+    <Branch>
+      <P Name="ZOrder">1868</P>
+      <P Name="Dst">2413#in:1</P>
+    </Branch>
   </Line>
+  <Annotation SID="2577">
+    <P Name="Name">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body align=&quot;left&quot; style=&quot; font-family:&apos;Helvetica&apos;; font-size:10px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:15px; font-weight:700;&quot;&gt;Fault-Tolerant Flight Control Model&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Welcome to the main Simulink model of the Fault-Tolerant Flight Control (FTFC) system for the Cessna Citation 500. The goal of this model is to test how well the aircraft can maintain stable flight during normal operation and when an actuator failure occurs. The model can be used to compare the Adaptive Nonlinear Dynamic Inversion (ANDI) controller with a conventional PI controller, and to study how both controllers respond to an aileron hard-over failure.&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The model represents the main closed-loop flight control system. It consists of the reference inputs, the flight controller, the actuator model, the nonlinear Cessna Citation 500 aircraft model, the feedback signals, and the fault-related logic. The reference inputs specify the desired aircraft response and are sent to the selected controller. The controller then calculates the required actuator commands, which are passed to the actuator subsystem and applied to the aircraft model. The resulting aircraft motion is fed back to the controller, closing the control loop.&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The actuator subsystem also contains the failure model used to introduce the aileron hard-over failure. When a failure is activated, the effect of the failed actuator can be studied together with the response of the controller. The ANDI controller uses feedback information and the estimated control effectiveness to adjust the control commands when the actuator configuration changes. This makes it possible to compare the nominal and failure cases and evaluate how well the fault-tolerant controller can maintain the desired aircraft behaviour.&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The model can therefore be operated in different configurations to study controller performance, fault accommodation and tolerance, and the effect of actuator failures on the closed-loop aircraft dynamics.&lt;/p&gt;
+&lt;h3 align=&quot;left&quot; style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:700;&quot;&gt;Switching Between ANDI and PI Control&lt;/span&gt;&lt;/h3&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ANDI is enabled during normal operation of the fault-tolerant controller. To disable ANDI and operate the aircraft using the classical PI controller:&lt;/p&gt;
+&lt;ol style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;
+&lt;li align=&quot;left&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:9px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Set the &lt;span style=&quot; font-family:&apos;Courier New&apos;; font-weight:700;&quot;&gt;ANDI enable&lt;/span&gt; signal to 0 for the entire simulation.&lt;/li&gt;
+&lt;li align=&quot;left&quot; style=&quot; margin-top:0px; margin-bottom:12px; margin-left:9px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Disconnect the &lt;span style=&quot; font-family:&apos;Courier New&apos;; font-weight:700;&quot;&gt;valid_B&lt;/span&gt; signal from the AND logical operator block.&lt;/li&gt;&lt;/ol&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;With these changes, the ANDI control path is disabled and the classical PI controller is used instead. This configuration can be used as a baseline for comparison with the fault-tolerant ANDI controller.&lt;/p&gt;
+&lt;h3 align=&quot;left&quot; style=&quot; margin-top:14px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:large; font-weight:700;&quot;&gt;Activating the Actuator Failure&lt;/span&gt;&lt;/h3&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The model contains an actuator failure mechanism that can be enabled or disabled manually. To configure the failure, navigate to:&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Courier New&apos;; font-weight:700;&quot;&gt;Cessna Citation 500&lt;/span&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; → &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Courier New&apos;; font-weight:700;&quot;&gt;Actuators&lt;/span&gt;&lt;span style=&quot; font-weight:700;&quot;&gt; → &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Courier New&apos;; font-weight:700;&quot;&gt;Failure Mode Activation&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Enabling &lt;span style=&quot; font-family:&apos;Courier New&apos;; font-weight:700;&quot;&gt;Failure Mode Activation&lt;/span&gt; introduces an aileron hard-over failure into the aircraft model. Disabling it restores nominal actuator behaviour.&lt;/p&gt;
+&lt;p align=&quot;left&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;By combining the controller and failure settings, the model can be used to investigate several important cases, including nominal PI control, nominal ANDI control, PI control during an actuator failure, and fault-tolerant ANDI control during an actuator failure. Comparing these cases provides insight into the ability of the fault-tolerant control architecture to detect, accommodate, and compensate for actuator failures while maintaining the desired aircraft response.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</P>
+    <P Name="Position">[-1005, -1161, -347, -597]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedHeight">on</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="HorizontalAlignment">left</P>
+    <P Name="VerticalAlignment">top</P>
+    <P Name="Interpreter">rich</P>
+  </Annotation>
   <Annotation SID="2006">
     <P Name="Name">de
 da
@@ -46274,20 +46282,20 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
           <P Name="LoadSaveID" Class="char">17</P>
-          <P Name="Extents" Class="double">[1673.0, 578.0]</P>
+          <P Name="Extents" Class="double">[1673.0, 792.0]</P>
           <P Name="ZoomFactor" Class="double">0.8</P>
           <P Name="Offset" Class="double">[-755.60708377279525, -334.56387337195309]</P>
-          <P Name="SceneRectInView" Class="double">[-755.60708377279525, -334.56387337195309, 2091.2499999999995, 722.49999999999989]</P>
+          <P Name="SceneRectInView" Class="double">[-755.60708377279525, -334.56387337195309, 2091.2499999999995, 989.99999999999989]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
           <P Name="LoadSaveID" Class="char">20</P>
-          <P Name="Extents" Class="double">[1673.0, 578.0]</P>
-          <P Name="ZoomFactor" Class="double">1.25</P>
-          <P Name="Offset" Class="double">[128.33888596107613, -95.2973658728452]</P>
-          <P Name="SceneRectInView" Class="double">[128.33888596107613, -95.2973658728452, 1338.4, 462.4]</P>
+          <P Name="Extents" Class="double">[1673.0, 792.0]</P>
+          <P Name="ZoomFactor" Class="double">0.8</P>
+          <P Name="Offset" Class="double">[-263.60962531343142, -369.57710658837118]</P>
+          <P Name="SceneRectInView" Class="double">[-263.60962531343142, -369.57710658837118, 2091.2499999999995, 989.99999999999989]</P>
         </Object>
         <Object ObjectID="7">
           <P Name="IsActive" Class="logical">0</P>
@@ -46304,20 +46312,20 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
           <P Name="LoadSaveID" Class="char">0</P>
-          <P Name="Extents" Class="double">[1673.0, 578.0]</P>
-          <P Name="ZoomFactor" Class="double">0.60000000000000009</P>
-          <P Name="Offset" Class="double">[-1132.2715245669428, -881.595657865457]</P>
-          <P Name="SceneRectInView" Class="double">[-1132.2715245669428, -881.595657865457, 2788.333333333333, 963.33333333333314]</P>
+          <P Name="Extents" Class="double">[1673.0, 792.0]</P>
+          <P Name="ZoomFactor" Class="double">0.3</P>
+          <P Name="Offset" Class="double">[-1120.3954649342886, -1255.7093455893121]</P>
+          <P Name="SceneRectInView" Class="double">[-1120.3954649342886, -1255.7093455893121, 5576.666666666667, 2640.0000000000005]</P>
         </Object>
         <Object ObjectID="9">
           <P Name="IsActive" Class="logical">0</P>
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
           <P Name="LoadSaveID" Class="char">2351</P>
-          <P Name="Extents" Class="double">[1673.0, 578.0]</P>
+          <P Name="Extents" Class="double">[1673.0, 792.0]</P>
           <P Name="ZoomFactor" Class="double">1.0</P>
           <P Name="Offset" Class="double">[-27.372332551532622, -166.70902915928602]</P>
-          <P Name="SceneRectInView" Class="double">[-27.372332551532622, -166.70902915928602, 1673.0, 578.0]</P>
+          <P Name="SceneRectInView" Class="double">[-27.372332551532622, -166.70902915928602, 1673.0, 792.0]</P>
         </Object>
         <Object ObjectID="10">
           <P Name="IsActive" Class="logical">0</P>
@@ -46325,9 +46333,9 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
           <P Name="LoadSaveID" Class="char">2519</P>
           <P Name="Extents" Class="double">[1673.0, 578.0]</P>
-          <P Name="ZoomFactor" Class="double">0.8</P>
-          <P Name="Offset" Class="double">[-411.69844024105544, -169.86465218453043]</P>
-          <P Name="SceneRectInView" Class="double">[-411.69844024105544, -169.86465218453043, 2091.2499999999995, 722.49999999999989]</P>
+          <P Name="ZoomFactor" Class="double">1.25</P>
+          <P Name="Offset" Class="double">[-146.76183409181297, -92.4463491099091]</P>
+          <P Name="SceneRectInView" Class="double">[-146.76183409181297, -92.4463491099091, 1338.4, 462.4]</P>
         </Object>
         <Object ObjectID="11">
           <P Name="IsActive" Class="logical">0</P>
@@ -46757,7 +46765,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
       </Array>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAADNfwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAeQAAAzUAAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjQD///8AAAABAAABrwAAAzX8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAAAwAABqsAAADS/AEAAAAE/AAAAAAAAAeAAAAAAAD////6/////wEAAAAA/AAAAAAAAAarAAAAAAD////6/////wEAAAAA/AAAAAAAAAarAAAAAAD////6/////wEAAAAA+/////8BAAAAAAAABqsAAAJ5AP///wAABqsAAAJ/AAAAAQAAAAIAAAABAAAAAvwAAAADAAAAAAAAAAAAAAABAAAAAAAAAAMAAAAA</P>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAADNfwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAeQAAAzUAAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjQD///8AAAABAAABrwAAAzX8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAAawA////AAAAAwAABqsAAADS/AEAAAAE/AAAAAAAAAeAAAAAAAD////6/////wEAAAAA/AAAAAAAAAarAAAAAAD////6/////wEAAAAA/AAAAAAAAAarAAAAAAD////6/////wEAAAAA+/////8AAAAAAAAABqsAAAJ5AP///wAABqsAAANVAAAAAQAAAAIAAAABAAAAAvwAAAADAAAAAAAAAAAAAAABAAAAAAAAAAMAAAAA</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">d22bf708-756b-41d6-af84-84beeafc600f</P>
     </Object>
