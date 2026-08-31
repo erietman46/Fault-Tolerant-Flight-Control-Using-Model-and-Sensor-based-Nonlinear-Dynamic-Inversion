@@ -6,12 +6,12 @@ The complete simulation contains the aircraft dynamics, actuator models, referen
 
 ## Project Overview
 
-Modern flight-control systems must remain stable and controllable even when an actuator no longer behaves as commanded. This project considers an **aileron hard-over failure**, in which one of the ailerons becomes stuck at a fixed deflection.
+Modern flight-control systems must remain stable and controllable even when an actuator no longer behaves as commanded. This project considers an aileron hard-over failure, in which one of the ailerons becomes stuck at a fixed deflection.
 
 The main objective is to compare two control architectures:
 
-- **Classical PI control**
-- **Adaptive Nonlinear Dynamic Inversion (ANDI)**
+- Classical PI control
+- Adaptive Nonlinear Dynamic Inversion (ANDI)
 
 The ANDI controller uses aircraft feedback and control-effectiveness information to determine the required incremental control action. When the actuator configuration changes because of a failure, the controller can modify the commanded actuator inputs based on the remaining control authority.
 
