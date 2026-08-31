@@ -72,6 +72,32 @@ Classical PI       ANDI
                        regressors + RLS + monitor
 ```
 
+## Key results
+
+The aileron fault is introduced at approximately `t = 60 s`. The identified aileron control effectiveness decreases substantially after the fault, strongly degrading the fixed classical controller. ANDI adapts to the changed model and keeps the aircraft much closer to its nominal trajectory.
+
+### Tracking performance after failure
+
+| Metric | Classical PI | ANDI | Improvement with ANDI |
+|---|---:|---:|---:|
+| RMS roll-rate error, `p` | 3.77 deg/s | 1.75 deg/s | 53.6% lower |
+| RMS pitch-rate error, `q` | 0.62 deg/s | 0.10 deg/s | 84.4% lower |
+| RMS yaw-rate error, `r` | 0.33 deg/s | 0.17 deg/s | 48.5% lower |
+| RMS sideslip error, `beta` | 0.81 deg | 0.18 deg | 77.9% lower |
+
+### Aircraft response and trajectory
+
+| Metric after failure | Classical PI | ANDI |
+|---|---:|---:|
+| Maximum roll angle | 70.85 deg | 14.43 deg |
+| Maximum pitch angle | 42.42 deg | 2.61 deg |
+| Altitude loss from failure point | 7385 m | 321 m |
+| Maximum horizontal trajectory deviation | 8576 m | 327 m |
+| Maximum 3-D trajectory deviation | 11290 m | 329 m |
+
+The results demonstrate substantially better fault accommodation for ANDI in the tested case. They should not be interpreted as proof that ANDI will remain stable or superior for every failure, flight condition, noise realization, or modeling error.
+
+
 ## Repository contents
 
 ### `model/`
@@ -132,31 +158,6 @@ The project intentionally combines an inherited aircraft simulation with new con
 | `Classical Rate Controller` | Fixed PI comparison baseline | Project implementation |
 | `plot_controller_comparison.m` | Reproducible four-case validation and figures/tables | Project implementation |
 
-
-## Key results
-
-The aileron fault is introduced at approximately `t = 60 s`. The identified aileron control effectiveness decreases substantially after the fault, strongly degrading the fixed classical controller. ANDI adapts to the changed model and keeps the aircraft much closer to its nominal trajectory.
-
-### Tracking performance after failure
-
-| Metric | Classical PI | ANDI | Improvement with ANDI |
-|---|---:|---:|---:|
-| RMS roll-rate error, `p` | 3.77 deg/s | 1.75 deg/s | 53.6% lower |
-| RMS pitch-rate error, `q` | 0.62 deg/s | 0.10 deg/s | 84.4% lower |
-| RMS yaw-rate error, `r` | 0.33 deg/s | 0.17 deg/s | 48.5% lower |
-| RMS sideslip error, `beta` | 0.81 deg | 0.18 deg | 77.9% lower |
-
-### Aircraft response and trajectory
-
-| Metric after failure | Classical PI | ANDI |
-|---|---:|---:|
-| Maximum roll angle | 70.85 deg | 14.43 deg |
-| Maximum pitch angle | 42.42 deg | 2.61 deg |
-| Altitude loss from failure point | 7385 m | 321 m |
-| Maximum horizontal trajectory deviation | 8576 m | 327 m |
-| Maximum 3-D trajectory deviation | 11290 m | 329 m |
-
-The results demonstrate substantially better fault accommodation for ANDI in the tested case. They should not be interpreted as proof that ANDI will remain stable or superior for every failure, flight condition, noise realization, or modeling error.
 
 ## Source model and academic attribution
 
