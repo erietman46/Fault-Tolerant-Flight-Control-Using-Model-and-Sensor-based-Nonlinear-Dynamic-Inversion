@@ -42,9 +42,6 @@ thetaN0 = [ ...
 ];
 PN0     = 10000*eye(6);
 
-% Step 3: ordinary RLS
-lambda_ID = 1.0;
-
 %% Step 4 - variance detector thresholds
 
 TX = 2.2784e-06;
